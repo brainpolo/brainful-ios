@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23605" systemVersion="24D60" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="BlockModel" representedClassName="BlockModel" syncable="YES" codeGenerationType="class">
+        <attribute name="created_timestamp" attributeType="Date" minDateTimeInterval="693378420" usesScalarValueType="NO"/>
+        <attribute name="last_edited" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="luid" attributeType="String" minValueString="6" maxValueString="6"/>
+        <attribute name="pinned" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="slug" attributeType="String" minValueString="2" maxValueString="200" spotlightIndexingEnabled="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" allowsCloudEncryption="YES" spotlightIndexingEnabled="YES"/>
+        <attribute name="type" attributeType="String"/>
+    </entity>
+</model>
