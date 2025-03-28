@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "48BEA154299D74E300BD6BC7"
-               BuildableName = "brainful-dev.app"
-               BlueprintName = "brainful"
+               BuildableName = "brainful companion.app"
+               BlueprintName = "brainful companion"
                ReferencedContainer = "container:brainful.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "48BEA154299D74E300BD6BC7"
-            BuildableName = "brainful-dev.app"
-            BlueprintName = "brainful"
+            BuildableName = "brainful companion.app"
+            BlueprintName = "brainful companion"
             ReferencedContainer = "container:brainful.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -73,8 +73,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "48BEA154299D74E300BD6BC7"
-            BuildableName = "brainful-dev.app"
-            BlueprintName = "brainful"
+            BuildableName = "brainful companion.app"
+            BlueprintName = "brainful companion"
             ReferencedContainer = "container:brainful.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -29,9 +29,6 @@
 		6B588AAC2D8FC71300B44876 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B588AAB2D8FC71300B44876 /* PersistenceController.swift */; };
 		6B588AB02D8FC74500B44876 /* BlockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B588AAF2D8FC74200B44876 /* BlockManager.swift */; };
 		6B588AB32D8FCB6600B44876 /* BrainfulData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6B588AB12D8FCB6600B44876 /* BrainfulData.xcdatamodeld */; };
-		6B588AB92D8FF10B00B44876 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B61C1129A832E20090CD95 /* WidgetKit.framework */; };
-		6B588ABA2D8FF10B00B44876 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B61C1329A832E20090CD95 /* SwiftUI.framework */; };
-		6B588ACB2D8FF10C00B44876 /* BrainfulWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6B588AB82D8FF10B00B44876 /* BrainfulWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6BC3A78D2D57C5C700DF1583 /* block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3A78C2D57C5C500DF1583 /* block.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,13 +47,6 @@
 			remoteGlobalIDString = 48BEA154299D74E300BD6BC7;
 			remoteInfo = brainful;
 		};
-		6B588AC92D8FF10C00B44876 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 48BEA14D299D74E300BD6BC7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6B588AB72D8FF10B00B44876;
-			remoteInfo = BrainfulWidgetExtension;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -66,7 +56,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				6B588ACB2D8FF10C00B44876 /* BrainfulWidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,24 +91,9 @@
 		6B588AAB2D8FC71300B44876 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		6B588AAF2D8FC74200B44876 /* BlockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockManager.swift; sourceTree = "<group>"; };
 		6B588AB22D8FCB6600B44876 /* BrainfulData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BrainfulData.xcdatamodel; sourceTree = "<group>"; };
-		6B588AB82D8FF10B00B44876 /* BrainfulWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BrainfulWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B588AD02D8FF1E200B44876 /* brainful.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = brainful.entitlements; sourceTree = "<group>"; };
 		6BC3A78C2D57C5C500DF1583 /* block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = block.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		6B588ACC2D8FF10C00B44876 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 6B588AB72D8FF10B00B44876 /* BrainfulWidgetExtension */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		6B588ABB2D8FF10B00B44876 /* BrainfulWidget */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (6B588ACC2D8FF10C00B44876 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = BrainfulWidget; sourceTree = "<group>"; };
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		48BEA152299D74E300BD6BC7 /* Frameworks */ = {
@@ -140,15 +114,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6B588AB52D8FF10B00B44876 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6B588ABA2D8FF10B00B44876 /* SwiftUI.framework in Frameworks */,
-				6B588AB92D8FF10B00B44876 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,7 +152,6 @@
 				48BEA157299D74E300BD6BC7 /* brainful */,
 				48BEA168299D74E500BD6BC7 /* brainfulTests */,
 				48BEA172299D74E500BD6BC7 /* brainfulUITests */,
-				6B588ABB2D8FF10B00B44876 /* BrainfulWidget */,
 				48B61C1029A832E20090CD95 /* Frameworks */,
 				48BEA156299D74E300BD6BC7 /* Products */,
 			);
@@ -199,7 +163,6 @@
 				48BEA155299D74E300BD6BC7 /* brainful-dev.app */,
 				48BEA165299D74E500BD6BC7 /* brainfulTests.xctest */,
 				48BEA16F299D74E500BD6BC7 /* brainfulUITests.xctest */,
-				6B588AB82D8FF10B00B44876 /* BrainfulWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -276,9 +239,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		48BEA154299D74E300BD6BC7 /* brainful */ = {
+		48BEA154299D74E300BD6BC7 /* brainful companion */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 48BEA179299D74E500BD6BC7 /* Build configuration list for PBXNativeTarget "brainful" */;
+			buildConfigurationList = 48BEA179299D74E500BD6BC7 /* Build configuration list for PBXNativeTarget "brainful companion" */;
 			buildPhases = (
 				48BEA151299D74E300BD6BC7 /* Sources */,
 				48BEA152299D74E300BD6BC7 /* Frameworks */,
@@ -288,9 +251,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				6B588ACA2D8FF10C00B44876 /* PBXTargetDependency */,
 			);
-			name = brainful;
+			name = "brainful companion";
 			productName = brainful;
 			productReference = 48BEA155299D74E300BD6BC7 /* brainful-dev.app */;
 			productType = "com.apple.product-type.application";
@@ -331,28 +293,6 @@
 			productReference = 48BEA16F299D74E500BD6BC7 /* brainfulUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		6B588AB72D8FF10B00B44876 /* BrainfulWidgetExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6B588ACD2D8FF10C00B44876 /* Build configuration list for PBXNativeTarget "BrainfulWidgetExtension" */;
-			buildPhases = (
-				6B588AB42D8FF10B00B44876 /* Sources */,
-				6B588AB52D8FF10B00B44876 /* Frameworks */,
-				6B588AB62D8FF10B00B44876 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				6B588ABB2D8FF10B00B44876 /* BrainfulWidget */,
-			);
-			name = BrainfulWidgetExtension;
-			packageProductDependencies = (
-			);
-			productName = BrainfulWidgetExtension;
-			productReference = 6B588AB82D8FF10B00B44876 /* BrainfulWidgetExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -374,9 +314,6 @@
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = 48BEA154299D74E300BD6BC7;
 					};
-					6B588AB72D8FF10B00B44876 = {
-						CreatedOnToolsVersion = 16.2;
-					};
 				};
 			};
 			buildConfigurationList = 48BEA150299D74E300BD6BC7 /* Build configuration list for PBXProject "brainful" */;
@@ -392,10 +329,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				48BEA154299D74E300BD6BC7 /* brainful */,
+				48BEA154299D74E300BD6BC7 /* brainful companion */,
 				48BEA164299D74E500BD6BC7 /* brainfulTests */,
 				48BEA16E299D74E500BD6BC7 /* brainfulUITests */,
-				6B588AB72D8FF10B00B44876 /* BrainfulWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -418,13 +354,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		48BEA16D299D74E500BD6BC7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6B588AB62D8FF10B00B44876 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -476,30 +405,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6B588AB42D8FF10B00B44876 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		48BEA167299D74E500BD6BC7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 48BEA154299D74E300BD6BC7 /* brainful */;
+			target = 48BEA154299D74E300BD6BC7 /* brainful companion */;
 			targetProxy = 48BEA166299D74E500BD6BC7 /* PBXContainerItemProxy */;
 		};
 		48BEA171299D74E500BD6BC7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 48BEA154299D74E300BD6BC7 /* brainful */;
+			target = 48BEA154299D74E300BD6BC7 /* brainful companion */;
 			targetProxy = 48BEA170299D74E500BD6BC7 /* PBXContainerItemProxy */;
-		};
-		6B588ACA2D8FF10C00B44876 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6B588AB72D8FF10B00B44876 /* BrainfulWidgetExtension */;
-			targetProxy = 6B588AC92D8FF10C00B44876 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -574,7 +491,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = brainful/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = brainful;
+				INFOPLIST_KEY_CFBundleDisplayName = "brainful companion";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Automatically authenticate to your brainful account using your credentials stored in Keychain.";
@@ -590,7 +507,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "brainspace.brainful-dev";
+				PRODUCT_BUNDLE_IDENTIFIER = brainpolo.brainful;
 				PRODUCT_NAME = "brainful-dev";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -610,7 +527,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = brainspace.brainfulTests;
+				PRODUCT_BUNDLE_IDENTIFIER = brainpolo.brainfulTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -705,7 +622,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = brainful/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = brainful;
+				INFOPLIST_KEY_CFBundleDisplayName = "brainful companion";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Automatically authenticate to your brainful account using your credentials stored in Keychain.";
@@ -721,7 +638,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = brainspace.brainful;
+				PRODUCT_BUNDLE_IDENTIFIER = brainpolo.brainful;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -766,167 +683,6 @@
 			};
 			name = prod;
 		};
-		6B588ACE2D8FF10C00B44876 /* dev */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 7NH3P7GK85;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BrainfulWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = BrainfulWidget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "brainspace.brainful-dev.BrainfulWidget";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = dev;
-		};
-		6B588ACF2D8FF10C00B44876 /* prod */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 7NH3P7GK85;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BrainfulWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = BrainfulWidget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "brainspace.brainful-dev.BrainfulWidget";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = prod;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -937,16 +693,16 @@
 				48BEA18D29A0B89000BD6BC7 /* prod */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = dev;
+			defaultConfigurationName = prod;
 		};
-		48BEA179299D74E500BD6BC7 /* Build configuration list for PBXNativeTarget "brainful" */ = {
+		48BEA179299D74E500BD6BC7 /* Build configuration list for PBXNativeTarget "brainful companion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				48BEA18A29A0B88700BD6BC7 /* dev */,
 				48BEA18E29A0B89000BD6BC7 /* prod */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = dev;
+			defaultConfigurationName = prod;
 		};
 		48BEA17C299D74E500BD6BC7 /* Build configuration list for PBXNativeTarget "brainfulTests" */ = {
 			isa = XCConfigurationList;
@@ -955,7 +711,7 @@
 				48BEA18F29A0B89000BD6BC7 /* prod */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = dev;
+			defaultConfigurationName = prod;
 		};
 		48BEA17F299D74E500BD6BC7 /* Build configuration list for PBXNativeTarget "brainfulUITests" */ = {
 			isa = XCConfigurationList;
@@ -964,16 +720,7 @@
 				48BEA19029A0B89000BD6BC7 /* prod */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = dev;
-		};
-		6B588ACD2D8FF10C00B44876 /* Build configuration list for PBXNativeTarget "BrainfulWidgetExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6B588ACE2D8FF10C00B44876 /* dev */,
-				6B588ACF2D8FF10C00B44876 /* prod */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = dev;
+			defaultConfigurationName = prod;
 		};
 /* End XCConfigurationList section */
 
